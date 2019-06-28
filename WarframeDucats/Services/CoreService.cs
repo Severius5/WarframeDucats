@@ -25,7 +25,7 @@ namespace WarframeDucats.Services
 			var ducatsInfos = await _marketProvider.GetItemsDucatInfos();
 			CacheProvider.Ducats = ducatsInfos
 				.OrderByDescending(x => x.DucatsPerPlat)
-				.Take(15)
+				.Take(20)
 				.Select(x =>
 				{
 					var item = CacheProvider.Items[x.ItemId];

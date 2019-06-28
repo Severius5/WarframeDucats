@@ -1,10 +1,11 @@
 ﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace WarframeDucats.Models
 {
 	public class ItemsResponse
 	{
 		[JsonProperty("items")]
-		public ItemsEnResponse Langs { get; set; }
+		public List<Item> Items { get; set; }
 	}
 }

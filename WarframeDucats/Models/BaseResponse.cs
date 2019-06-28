@@ -4,5 +4,7 @@
 		where TModel : class
 	{
 		public TModel Payload { get; set; }
+
+		public string Error { get; set; }
 	}
 }

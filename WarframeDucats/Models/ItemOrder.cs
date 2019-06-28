@@ -17,6 +17,6 @@ namespace WarframeDucats.Models
 
 		public int Quantity { get; set; }
 
-		public int Platinum { get; set; }
+		public double Platinum { get; set; }
 	}
 }

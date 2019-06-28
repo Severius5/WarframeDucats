@@ -100,7 +100,6 @@
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\ItemOrder.cs" />
     <Compile Include="Models\ItemOrdersResponse.cs" />
-    <Compile Include="Models\ItemsEnResponse.cs" />
     <Compile Include="Models\ItemsResponse.cs" />
     <Compile Include="Models\OrderType.cs" />
     <Compile Include="Models\Platform.cs" />

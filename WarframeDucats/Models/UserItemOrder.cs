@@ -15,7 +15,7 @@ namespace WarframeDucats.Models
 
 		public bool Visible { get; set; }
 
-		public int Platinum { get; set; }
+		public double Platinum { get; set; }
 
 		public UserItem Item { get; set; }
 	}

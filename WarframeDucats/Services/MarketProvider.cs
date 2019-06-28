@@ -39,7 +39,7 @@ namespace WarframeDucats.Services
 					CanExchangeToDucats(x.Item.ItemId))
 				.Select(x => new UserOrder
 				{
-					Platinum = x.Platinum,
+					Platinum = (int)x.Platinum,
 					Quantity = x.Quantity,
 					ItemName = x.Item.En.ItemName
 				})
@@ -61,7 +61,7 @@ namespace WarframeDucats.Services
 					x.User?.Status == Status.InGame)
 				.Select(x => new DTO.ItemOrder
 				{
-					Platinum = x.Platinum,
+					Platinum = (int)x.Platinum,
 					Quantity = x.Quantity,
 					Username = x.User.Name
 				})
@@ -90,7 +90,7 @@ namespace WarframeDucats.Services
 			var json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 			var models = JsonConvert.DeserializeObject<BaseResponse<ItemsResponse>>(json);
 
-			return models.Payload.Langs.EngItems
+			return models.Payload.Items
 				.Select(x => new ItemInfo
 				{
 					Id = x.ItemId,
